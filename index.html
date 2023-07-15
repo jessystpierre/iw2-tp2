@@ -3,23 +3,321 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="scripts/menuburger.js"></script>
-    <script src="scripts/carrousel.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/css/normalize.css">
     <link rel="stylesheet" href="style/css/style.css">
-    <title>TP2</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Accueil - Bohemian Rhapsody</title>
 </head>
 <body>
-    <ul class="mt-5">
-        <li><a class="ml-10 underline decoration-solid text-blue-700" href="j-header-footer.html">header et footer</a></li>
-        <li><a class="ml-10 underline decoration-solid text-blue-700" href="j-images-extraits.html">images et extraits</a></li>
-        <li><a class="ml-10 underline decoration-solid text-blue-700" href="j-presentation-acteurs.html">présentation des acteurs</a></li>
-        <li><a class="ml-10 underline decoration-solid text-blue-700" href="j-accordeons.html">accordéons</a></li>
-        <li><a class="ml-10 underline decoration-solid text-blue-700" href="m-presentation-oeuvre.html">présentation de l'oeuvre</a></li>
-        <li><a class="ml-10 underline decoration-solid text-blue-700" href="m-zigzag.html">section zigzag</a></li>
-        <li><a class="ml-10 underline decoration-solid text-blue-700" href="m-faits-divers.html">faits divers</a></li>
-        <li><a class="ml-10 underline decoration-solid text-blue-700" href="m-galerie-bloopers.html">galerie bloopers</a></li>
-    </ul>
+    <!-- Header - Fait par Jessy -->
+    <header>
+        <nav class="border-gray-200 bg-black">
+            <div class="container flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="index.html" class="flex items-center">
+                    <img src="medias/bohemian-rhapsody-logo.png" class="h-12 mr-3" alt="Bohemian rhapsody logo" />
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 rounded-lg md:hidden focus:ring-2 text-gray-400 hover:bg-orange-600 focus:ring-orange-600" aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-stone-800 md:bg-black border-orange-400">
+                        <li>
+                            <a href="index.html" class="block py-2 pl-3 pr-4 rounded md:border-0 md:hover:text-orange-400 md:p-0 text-slate-100 md:hover:text-orange-400 hover:bg-orange-600 hover:text-white md:hover:bg-transparent text-lg">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="tournage.html" class="block py-2 pl-3 pr-4 rounded md:border-0 md:hover:text-orange-400 md:p-0 text-slate-100 md:hover:text-orange-400 hover:bg-orange-600 hover:text-white md:hover:bg-transparent text-lg">Tournage</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Présentation de l'oeuvre - Fait par Megan -->
+    <section class="px-4 bg-black py-20">
+        <div class="container mx-auto grid grid-cols-12">
+            <div class="col-span-12 md:col-span-6 my-auto pr-20">
+                <h2 class="text-5xl text-white font-bold">Présentation de l'oeuvre</h2>
+                <p class="text-sm mt-5 text-white">Bohemian Rhapsody est un biopic captivant qui retrace l'histoire extraordinaire du groupe Queen et de Freddie Mercury, avec la performance incroyable de Rami Malek dans le rôle principal. Le film offre une immersion passionnante dans l'univers musical légendaire de Queen et met en lumière la vie tumultueuse et le talent indéniable de Freddie Mercury.</p>
+                <div class="mt-7 flex">
+                    <a href="#"
+                        class="text-sm mr-2 bg-orange-600 hover:bg-black hover:border-white text-white font-bold py-2 px-2 border border-black rounded">Sélectionnez
+                        la quantité</a>
+                    <a href="#"
+                        class="text-sm bg-orange-600 hover:bg-black hover:border-white text-white font-bold py-2 px-2 border border-black rounded">+
+                        Achetez maintenant</a>
+                </div>
+            </div>
+            <div class="mt-12 max-w-2xl col-span-12 md:col-span-6">
+                <div id="default-carousel" class="relative" data-carousel="static">
+                    <!-- Carousel wrapper -->
+                    <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <span
+                                class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First
+                                Slide</span>
+                            <img src="medias/carrousel/carousel-1.jpg"
+                                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 object-cover"
+                                alt="img-1">
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="medias/carrousel/carousel-2.jpg"
+                                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 object-cover"
+                                alt="img-2">
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="medias/carrousel/carousel-3.jpg"
+                                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 object-cover"
+                                alt="img-3">
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="medias/carrousel/carousel-4.jpg"
+                                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 object-cover"
+                                alt="img-4">
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="medias/carrousel/carousel-5.jpg"
+                                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 object-cover"
+                                alt="img-5">
+                        </div>
+                    </div>
+                    <!-- Slider indicators -->
+                    <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1"
+                            data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                            data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                            data-carousel-slide-to="2"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                            data-carousel-slide-to="3"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                            data-carousel-slide-to="4"></button>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button"
+                        class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                        data-carousel-prev>
+                        <span
+                            class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7">
+                                </path>
+                            </svg>
+                            <span class="hidden">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button"
+                        class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                        data-carousel-next>
+                        <span
+                            class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                            <span class="hidden">Next</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Images et extraits - Fait par Jessy -->
+    <section class="container grid grid-cols-12 mx-auto px-4 mt-10">
+        <div class="flex flex-col items-center col-span-12">
+            <h2 class="text-4xl font-semibold">Images et extraits</h2>
+            <p class="text-center my-4">Dans un extrait poignant du film "Bohemian Rhapsody", Rami Malek incarne Freddie Mercury avec une intensité captivante, capturant toute l'énergie et l'émotion qui ont fait de Queen un groupe légendaire.</p>
+            <form class="mb-6 flex" action="">
+                <label for="email" class="hidden">Email:</label>
+                <input type="email" id="email" placeholder="Entrer votre courriel" class="bg-gray-50 border border-orange-500 text-gray-900 text-md rounded focus:ring-orange-500 focus:ring-2 outline-none h-full p-1 mr-4">
+                <input type="submit" value="S'inscrire" class="bg-orange-500 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded">   
+            </form>
+        </div>
+        <div class="col-span-12 grid grid-cols-12 gap-8 mb-6">
+            <figure class="flex flex-col col-span-12 md:col-span-6 xl:col-span-4">
+                <img class="h-96 object-cover shadow-md" src="medias/extraits/extrait1.jpg" alt="Freddie au téléphone">
+                <figcaption class="mx-auto text-lg font-light">Extrait un</figcaption>
+            </figure>
+            <figure class="flex flex-col col-span-12 md:col-span-6 xl:col-span-4">
+                <img class="h-96 object-cover shadow-md" src="medias/extraits/extrait2.jpg" alt="Queen sur la scène">
+                <figcaption class="mx-auto text-lg font-light">Extrait deux</figcaption>
+            </figure>
+            <figure class="flex flex-col col-span-12 md:col-span-6 xl:col-span-4">
+                <img class="h-96 object-cover object-right shadow-md" src="medias/extraits/extrait3.jpg" alt="Freddie contre attaque">
+                <figcaption class="mx-auto text-lg font-light">Extrait trois</figcaption>
+            </figure>
+            <video class="hidden h-96 md:inline md:col-span-6 xl:col-start-3 xl:col-end-11 mx-auto bg-black shadow-md" src="medias/extraits/bohemian_rhapsody_trailer.mp4" controls>
+        </div>
+    </section>
+
+    <!-- Présentation des acteurs - Fait par Jessy -->
+    <section class="container grid grid-cols-12 mx-auto px-4 mt-10">
+        <div class="col-span-12 md:col-span-8 xl:col-span-6 mb-6">
+            <h2 class="text-4xl font-semibold mb-2">Présentation des acteurs</h2>
+            <p class="">Bohemian Rhapsody met en vedette Rami Malek dans le rôle de Mercury, avec Lucy Boynton, Gwilym Lee, Ben Hardy, Joe Mazzello, Aidan Gillen, Tom Hollander et Mike Myers dans des rôles secondaires. Les membres du groupe Queen, Brian May et Roger Taylor, ont également servi de consultants.</p>
+        </div>
+        <div class="col-span-12 grid grid-cols-12 gap-4 md:gap-8 mb-6">
+            <div class="col-span-6 md:col-span-4 xl:col-span-3 flex flex-col ring-2 ring-orange-500 p-2 rounded-xl shadow-lg">
+                <img class="rounded-xl h-96 object-cover object-top" src="medias/acteurs/ramimalek.png" alt="Rami Malek">
+                <h3 class="text-2xl font-medium mt-2">Rami Malek</h3>
+                <span class="text-lg font-light">Freddie Mercury</span>
+                <p class="mt-2">Rami Malek est un acteur américain. Il est connu pour avoir interprété le pirate informatique Elliot Alderson dans la série télévisée Mr. Robot.</p>
+                <div class="mt-auto text-2xl">
+                    <a href="#" class="fa fa-facebook-square hover:text-orange-500"></a>
+                    <a href="#" class="fa fa-twitter-square hover:text-orange-500"></a>
+                    <a href="#" class="fa fa-instagram hover:text-orange-500"></a>
+                </div>
+            </div>
+            <div class="col-span-6 md:col-span-4 xl:col-span-3 flex flex-col ring-2 ring-orange-500 p-2 rounded-xl shadow-lg">
+                <img class="rounded-xl h-96 object-cover object-top" src="medias/acteurs/benhardy.png" alt="Ben Hardy">
+                <h3 class="text-2xl font-medium mt-2">Ben Hardy</h3>
+                <span class="text-lg font-light">Roger Taylor</span>
+                <p class="mt-2">Ben Hardy est un acteur anglais. Il est connu pour avoir joué le rôle de Peter Beale dans EastEnders. Hardy a fait ses débuts au cinéma en tant qu'Archangel dans le film de super-héros X-Men: Apocalypse.</p>
+                <div class="mt-auto text-2xl">
+                    <a href="#" class="fa fa-facebook-square hover:text-orange-500"></a>
+                    <a href="#" class="fa fa-twitter-square hover:text-orange-500"></a>
+                    <a href="#" class="fa fa-instagram hover:text-orange-500"></a>
+                </div>
+            </div>
+            <div class="col-span-6 md:col-span-4 xl:col-span-3 flex flex-col ring-2 ring-orange-500 p-2 rounded-xl shadow-lg">
+                <img class="rounded-xl h-96 object-cover object-center" src="medias/acteurs/gwilymlee.png" alt="Gwilym Lee">
+                <h3 class="text-2xl font-medium mt-2">Gwilym Lee</h3>
+                <span class="text-lg font-light">Brian May</span>
+                <p class="mt-2">Gwilym Lee est un acteur britannique. Il est surtout connu pour ses rôles dans Jamestown, Midsomer Murders, Top End Wedding et The Great.</p>
+                <div class="mt-auto text-2xl">
+                    <a href="#" class="fa fa-facebook-square hover:text-orange-500"></a>
+                    <a href="#" class="fa fa-twitter-square hover:text-orange-500"></a>
+                    <a href="#" class="fa fa-instagram hover:text-orange-500"></a>
+                </div>
+            </div>
+            <div class="col-span-6 md:col-span-4 xl:col-span-3 flex flex-col ring-2 ring-orange-500 p-2 rounded-xl shadow-lg">
+                <img class="rounded-xl h-96 object-cover object-top" src="medias/acteurs/josephmazzello.png" alt="Joseph Mazzello">
+                <h3 class="text-2xl font-medium mt-2">Joseph Mazzello</h3>
+                <span class="text-lg font-light">John Deacon</span>
+                <p class="mt-2">Joseph Mazzello est un acteur américain. Il est surtout connu pour ses rôles de Tim Murphy dans Jurassic Park, Roarke Hartman dans The River Wild et Eugene Sledge dans la mini-série de HBO, The Pacific.</p>
+                <div class="mt-auto text-2xl">
+                    <a href="#" class="fa fa-facebook-square hover:text-orange-500"></a>
+                    <a href="#" class="fa fa-twitter-square hover:text-orange-500"></a>
+                    <a href="#" class="fa fa-instagram hover:text-orange-500"></a>
+                </div>
+            </div>
+            <div class="col-span-6 md:col-span-4 xl:col-span-3 flex flex-col ring-2 ring-orange-500 p-2 rounded-xl shadow-lg">
+                <img class="rounded-xl h-96 object-cover object-top" src="medias/acteurs/lucyboynton.png" alt="Lucy Boynton">
+                <h3 class="text-2xl font-medium mt-2">Lucy Boynton</h3>
+                <span class="text-lg font-light">Mary Austin</span>
+                <p class="mt-2">Lucy Boynton est une actrice britanno-américaine. Élevée à Londres, elle a fait ses débuts professionnels en tant que jeune Beatrix Potter dans le film Miss Potter.</p>
+                <div class="mt-auto text-2xl">
+                    <a href="#" class="fa fa-facebook-square hover:text-orange-500"></a>
+                    <a href="#" class="fa fa-twitter-square hover:text-orange-500"></a>
+                    <a href="#" class="fa fa-instagram hover:text-orange-500"></a>
+                </div>
+            </div>
+            <div class="col-span-6 md:col-span-4 xl:col-span-3 flex flex-col ring-2 ring-orange-500 p-2 rounded-xl shadow-lg">
+                <img class="rounded-xl h-96 object-cover object-center" src="medias/acteurs/aidengillen.png" alt="Aidan Gillen">
+                <h3 class="text-2xl font-medium mt-2">Aidan Gillen</h3>
+                <span class="text-lg font-light">John Reid</span>
+                <p class="mt-2">Aidan Murphy, mieux connu sous le nom d'Aidan Gillen, est un acteur irlandais. Il est récipiendaire de trois prix Irish Film & Television Awards et a été nominé pour un British Academy Television Award.</p>
+                <div class="mt-auto text-2xl">
+                    <a href="#" class="fa fa-facebook-square hover:text-orange-500"></a>
+                    <a href="#" class="fa fa-twitter-square hover:text-orange-500"></a>
+                    <a href="#" class="fa fa-instagram hover:text-orange-500"></a>
+                </div>
+            </div>
+            <div class="col-span-6 md:col-span-4 xl:col-span-3 flex flex-col ring-2 ring-orange-500 p-2 rounded-xl shadow-lg">
+                <img class="rounded-xl h-96 object-cover object-top" src="medias/acteurs/allenleech.png" alt="Allen Leech">
+                <h3 class="text-2xl font-medium mt-2">Allen Leech</h3>
+                <span class="text-lg font-light">Paul Prenter</span>
+                <p class="mt-2">Allen Leech est un acteur irlandais. Il est surtout connu pour ses rôles de Tom Branson dans le drame historique de la ITV, Downton Abbey, et de Paul Prenter dans le biopic Bohemian Rhapsody.</p>
+                <div class="mt-auto text-2xl">
+                    <a href="#" class="fa fa-facebook-square hover:text-orange-500"></a>
+                    <a href="#" class="fa fa-twitter-square hover:text-orange-500"></a>
+                    <a href="#" class="fa fa-instagram hover:text-orange-500"></a>
+                </div>
+            </div>
+            <div class="col-span-6 md:col-span-4 xl:col-span-3 flex flex-col ring-2 ring-orange-500 p-2 rounded-xl shadow-lg">
+                <img class="rounded-xl h-96 object-cover object-center" src="medias/acteurs/mikemyers.png" alt="Mike Myers">
+                <h3 class="text-2xl font-medium mt-2">Mike Myers</h3>
+                <span class="text-lg font-light">Ray Foster</span>
+                <p class="mt-2">Michael John Myers est un acteur, comédien, scénariste, producteur et réalisateur canadien. Ses récompenses comprennent sept MTV Awards, un Primetime Emmy Award et un Screen Actors Guild Award.</p>
+                <div class="mt-auto text-2xl">
+                    <a href="#" class="fa fa-facebook-square hover:text-orange-500"></a>
+                    <a href="#" class="fa fa-twitter-square hover:text-orange-500"></a>
+                    <a href="#" class="fa fa-instagram hover:text-orange-500"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section en zigzag - Fait par Megan -->
+    <section class="container mx-auto">
+        <div class="grid grid-cols-12 py-20 px-4">
+            <div class="flex flex-col md:flex-row items-center md:flex-row-reverse col-span-12 ">
+                <p class="md:w-1/2 text-xl">Bohemian Rhapsody est un film captivant qui raconte l'histoire épique du groupe Queen et de son charismatique leader, Freddie Mercury, avec une performance incroyable de Rami Malek.</p>
+                <img src="medias/faits-divers/faits-divers-1.jpg" alt="faits-divers-1" class="md:w-1/2 my-5 md:pr-5 xl:mr-10">
+            </div>
+            <div class="flex flex-col md:flex-row items-center col-span-12">
+                <p class="md:w-1/2 text-xl">Le film offre une expérience immersive en reconstituant de manière saisissante les performances scéniques emblématiques de Queen, tout en explorant les défis personnels et les triomphes musicaux du groupe.</p>
+                <img src="medias/faits-divers/faits-divers-2.jpg" alt="faits-divers-2" class="md:w-1/2 my-5 md:pl-5 xl:ml-10">
+            </div>
+            <div class="flex flex-col md:flex-row items-center md:flex-row-reverse col-span-12">
+                <p class="md:w-1/2 text-xl">Avec une narration émouvante et une bande originale emblématique, "Bohemian Rhapsody" est une célébration de la musique intemporelle de Queen et de l'impact profond qu'ils ont laissé dans l'histoire de la musique.</p>
+                <img src="medias/faits-divers/faits-divers-3.jpg" alt="faits-divers-3" class="md:w-1/2 my-5 md:pr-5 xl:mr-10">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer - Fait par Jessy -->
+    <footer class="bg-black pt-10">
+        <div class="container mx-auto text-slate-100 text-lg">
+            <div class="flex justify-between flex-wrap px-4 pb-2">
+                <div>
+                    <a href="tel:1-418-905-2287" class="fa fa-phone hover:text-orange-400"> 418-905-2287</a>
+                    <a href="mailto:jessy.stpierre@live.com" class="fa fa-envelope-o ml-2 hover:text-orange-400"> jessy.stpierre@live.com</a>
+                </div>
+                <div class="flex">
+                    <span>Jessy St-Pierre</span>
+                    <div class="ml-5">
+                        <a href="#" class="fa fa-facebook-square hover:text-orange-400"></a>
+                        <a href="#" class="fa fa-linkedin-square hover:text-orange-400"></a>
+                        <a href="#" class="fa fa-twitter hover:text-orange-400"></a>
+                        <a href="#" class="fa fa-instagram hover:text-orange-400"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between flex-wrap px-4">
+                <div>
+                    <a href="tel:1-418-555-1234" class="fa fa-phone hover:text-orange-400"> 418-555-1234</a>
+                    <a href="mailto:megan.martel@live.com" class="fa fa-envelope-o ml-2 hover:text-orange-400"> megan.martel@live.com</a>
+                </div>
+                <div class="flex">
+                    <span>Megan Martel</span>
+                    <div class="ml-5">
+                        <a href="#" class="fa fa-facebook-square hover:text-orange-400"></a>
+                        <a href="#" class="fa fa-linkedin-square hover:text-orange-400"></a>
+                        <a href="#" class="fa fa-twitter hover:text-orange-400"></a>
+                        <a href="#" class="fa fa-instagram hover:text-orange-400"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto mt-5 text-slate-100 text-lg px-4"> 
+            <hr class="border-2 border-orange-500">
+            <span class="my-4 inline-block">Cégep de Trois-Rivières</span>
+        </div>
+    </footer>
 </body>
 </html>
