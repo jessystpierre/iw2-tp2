@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>TP2</title>
+    <title>Accueil - Bohemian Rhapsody</title>
 </head>
 <body>
     <!-- Header - Fait par Jessy -->
@@ -39,14 +39,11 @@
 
     <!-- Présentation de l'oeuvre - Fait par Megan -->
     <section class="px-4 bg-black py-20">
-        <div class="container mx-auto w-4/5 grid gap-20 grid-cols-12">
-            <div class="col-span-6 my-auto pr-20">
+        <div class="container mx-auto grid grid-cols-12">
+            <div class="col-span-12 md:col-span-6 my-auto pr-20">
                 <h2 class="text-5xl text-white font-bold">Présentation de l'oeuvre</h2>
-                <p class="text-sm mt-5 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
-                    earum error
-                    doloremque temporibus
-                    delectus corporis culpa reprehenderit totam ad adipisci.</p>
-                <div class="mt-7">
+                <p class="text-sm mt-5 text-white">Bohemian Rhapsody est un biopic captivant qui retrace l'histoire extraordinaire du groupe Queen et de Freddie Mercury, avec la performance incroyable de Rami Malek dans le rôle principal. Le film offre une immersion passionnante dans l'univers musical légendaire de Queen et met en lumière la vie tumultueuse et le talent indéniable de Freddie Mercury.</p>
+                <div class="mt-7 flex">
                     <a href="#"
                         class="text-sm mr-2 bg-orange-600 hover:bg-black hover:border-white text-white font-bold py-2 px-2 border border-black rounded">Sélectionnez
                         la quantité</a>
@@ -55,7 +52,7 @@
                         Achetez maintenant</a>
                 </div>
             </div>
-            <div class="max-w-2xl col-span-6">
+            <div class="mt-12 max-w-2xl col-span-12 md:col-span-6">
                 <div id="default-carousel" class="relative" data-carousel="static">
                     <!-- Carousel wrapper -->
                     <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
@@ -143,7 +140,7 @@
     <section class="container grid grid-cols-12 mx-auto px-4 mt-10">
         <div class="flex flex-col items-center col-span-12">
             <h2 class="text-4xl font-semibold">Images et extraits</h2>
-            <p class="text-center my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem at ipsa voluptatibus repudiandae incidunt quo.</p>
+            <p class="text-center my-4">Dans un extrait poignant du film "Bohemian Rhapsody", Rami Malek incarne Freddie Mercury avec une intensité captivante, capturant toute l'énergie et l'émotion qui ont fait de Queen un groupe légendaire.</p>
             <form class="mb-6 flex" action="">
                 <label for="email" class="hidden">Email:</label>
                 <input type="email" id="email" placeholder="Entrer votre courriel" class="bg-gray-50 border border-orange-500 text-gray-900 text-md rounded focus:ring-orange-500 focus:ring-2 outline-none h-full p-1 mr-4">
@@ -266,20 +263,20 @@
     </section>
 
     <!-- Section en zigzag - Fait par Megan -->
-    <section class="container-fluid">
-        <div class="w-4/5 mx-auto gap-20 grid grid-cols-12 py-20">
-            <img src="medias/faits-divers/faits-divers-1.jpg" alt="faits-divers-1" class="col-span-6">
-            <p class="col-span-6 my-auto text-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis tenetur
-                obcaecati vero odit
-                molestiae deleniti impedit excepturi deserunt repellat natus.</p>
-            <p class="col-span-6 my-auto text-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis tenetur
-                obcaecati vero odit
-                molestiae deleniti impedit excepturi deserunt repellat natus.</p>
-            <img src="medias/faits-divers/faits-divers-2.jpg" alt="faits-divers-2" class="col-span-6">
-            <img src="medias/faits-divers/faits-divers-3.jpg" alt="faits-divers-3" class="col-span-6">
-            <p class="col-span-6 my-auto text-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis tenetur
-                obcaecati vero odit
-                molestiae deleniti impedit excepturi deserunt repellat natus.</p>
+    <section class="container mx-auto">
+        <div class="grid grid-cols-12 py-20 px-4">
+            <div class="flex flex-col md:flex-row items-center md:flex-row-reverse col-span-12 ">
+                <p class="md:w-1/2 text-xl">Bohemian Rhapsody est un film captivant qui raconte l'histoire épique du groupe Queen et de son charismatique leader, Freddie Mercury, avec une performance incroyable de Rami Malek.</p>
+                <img src="medias/faits-divers/faits-divers-1.jpg" alt="faits-divers-1" class="md:w-1/2 my-5 md:pr-5 xl:mr-10">
+            </div>
+            <div class="flex flex-col md:flex-row items-center col-span-12">
+                <p class="md:w-1/2 text-xl">Le film offre une expérience immersive en reconstituant de manière saisissante les performances scéniques emblématiques de Queen, tout en explorant les défis personnels et les triomphes musicaux du groupe.</p>
+                <img src="medias/faits-divers/faits-divers-2.jpg" alt="faits-divers-2" class="md:w-1/2 my-5 md:pl-5 xl:ml-10">
+            </div>
+            <div class="flex flex-col md:flex-row items-center md:flex-row-reverse col-span-12">
+                <p class="md:w-1/2 text-xl">Avec une narration émouvante et une bande originale emblématique, "Bohemian Rhapsody" est une célébration de la musique intemporelle de Queen et de l'impact profond qu'ils ont laissé dans l'histoire de la musique.</p>
+                <img src="medias/faits-divers/faits-divers-3.jpg" alt="faits-divers-3" class="md:w-1/2 my-5 md:pr-5 xl:mr-10">
+            </div>
         </div>
     </section>
 
